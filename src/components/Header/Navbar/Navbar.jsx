@@ -9,9 +9,21 @@ const Navbar = () => {
       </div>
       <div className="">
         <ul className="flex gap-10 items-center text-lg font-semibold text-gray-600">
-            <li><NavLink href="">Home</NavLink></li>
-            <li><NavLink href="">Donation</NavLink></li>
-            <li><NavLink href="">Statistics</NavLink></li>
+            <li><NavLink to={'/'} className={({ isActive }) =>
+                      isActive
+                        ? `text-[#FF444A] underline`
+                        : ""
+                    }>Home</NavLink></li>
+            <li><NavLink to={'/donation'} className={({ isActive }) =>
+                      isActive
+                        ? `text-[#FF444A] underline`
+                        : ""
+                    }>Donation</NavLink></li>
+            <li><NavLink to={'/statistics'} className={({ isActive }) =>
+                      isActive
+                        ? `text-[#FF444A] underline`
+                        : ""
+                    }>Statistics</NavLink></li>
         </ul>
       </div>
       </div>
