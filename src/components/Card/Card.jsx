@@ -1,16 +1,32 @@
+import PropTypes from 'prop-types';
+const Card = ({donation}) => {
+  const {Img, category, title, card_color, text_color, btn_color} = donation;
 
-const Card = () => {
+
   return (
-    <div>
-            <div className="card w-96 bg-[#FF444A26] shadow-xl">
-                <figure><img src="./src/assets/Education.png" alt="Shoes"  className="w-full"/></figure>
+    <div className="">
+            <div
+            style={{backgroundColor: card_color}}
+            className={`card w-80 bg-[${card_color}] hover:shadow-xl shadow-lg ease-in-out duration-700 hover:scale-105`}>
+                <figure><img src={Img} alt="Shoes"  className="w-full"/></figure>
                 <div className="p-4">
-                    <button className="p-1 mb-1 text-left bg-[#FF444A33] rounded-lg  w-24 flex justify-center text-[#FF444A] font-semibold">Education</button>
-                    <h2 className="card-title text-[#FF444A] ">Good education</h2>
+                    <button
+                    style={{backgroundColor: btn_color,
+                                color: text_color
+                    }}
+                    className={`p-1 mb-1 text-left bg-[${btn_color}] rounded-lg  w-24 flex justify-center text-[${text_color}] font-semibold`}>{category}</button>
+                    <h2
+                    style={{color: text_color}}
+                    className={`card-title text-[${text_color}]`}>{title}</h2>
                 </div>
             </div>
     </div>
   )
+}
+
+Card.propTypes ={
+  donation: PropTypes.object
+  
 }
 
 export default Card

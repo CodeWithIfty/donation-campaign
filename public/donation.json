@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "Img": "https://i.ibb.co/Y7FSQQJ/Education.png",
+        "category": "Education",
+        "title": "Good education",
+        "price": 19.99,
+        "card_color": "#FF444A26",
+        "text_color": "#FF444A",
+        "btn_color": "#FF444A33"
+      },
+    {
+        "id": 2,
+        "Img": "https://i.ibb.co/YQCrk7g/Health.png",
+        "category": "Health",
+        "title": "Clean water for children",
+        "price": 19.99,
+        "card_color": "#0052FF26",
+        "text_color": "#0052FF",
+        "btn_color": "#0052FF33"
+      },
+    {
+        "id": 3,
+        "Img": "https://i.ibb.co/2sKXqL5/Food.png",
+        "category": "Food",
+        "title": "Better Food for Everyone",
+        "price": 19.99,
+        "card_color": "#F8714726",
+        "text_color": "#F87147",
+        "btn_color": "#F8714733"
+      },
+    {
+        "id": 4,
+        "Img": "https://i.ibb.co/jgXk4kt/Clothing.png",
+        "category": "Clothing",
+        "title": "Used Clothing Drive",
+        "price": 19.99,
+        "card_color": "#79C23F26",
+        "text_color": "#79C23F",
+        "btn_color": "#79C23F33"
+      },
+      {
+        "id": 5,
+        "Img": "https://i.ibb.co/jgXk4kt/Clothing.png",
+        "category": "Clothing",
+        "title": "Used Clothing Drive",
+        "price": 19.99,
+        "card_color": "#79C23F26",
+        "text_color": "#79C23F",
+        "btn_color": "#79C23F33"
+      },
+      {
+        "id": 6,
+        "Img": "https://i.ibb.co/2sKXqL5/Food.png",
+        "category": "Food",
+        "title": "Better Food for Everyone",
+        "price": 19.99,
+        "card_color": "#F8714726",
+        "text_color": "#F87147",
+        "btn_color": "#F8714733"
+      },
+      {
+        "id": 7,
+        "Img": "https://i.ibb.co/YQCrk7g/Health.png",
+        "category": "Health",
+        "title": "Clean water for children",
+        "price": 19.99,
+        "card_color": "#0052FF26",
+        "text_color": "#0052FF",
+        "btn_color": "#0052FF33"
+      },
+      {
+        "id": 8,
+        "Img": "https://i.ibb.co/Y7FSQQJ/Education.png",
+        "category": "Education",
+        "title": "Good education",
+        "price": 19.99,
+        "card_color": "#FF444A26",
+        "text_color": "#FF444A",
+        "btn_color": "#FF444A33"
+      },
+      {
+        "id": 9,
+        "Img": "https://i.ibb.co/Y7FSQQJ/Education.png",
+        "category": "Education",
+        "title": "Good education",
+        "price": 19.99,
+        "card_color": "#FF444A26",
+        "text_color": "#FF444A",
+        "btn_color": "#FF444A33"
+      },
+      {
+        "id": 10,
+        "Img": "https://i.ibb.co/YQCrk7g/Health.png",
+        "category": "Health",
+        "title": "Clean water for children",
+        "price": 19.99,
+        "card_color": "#0052FF26",
+        "text_color": "#0052FF",
+        "btn_color": "#0052FF33"
+      },     
+      {
+        "id": 11,
+        "Img": "https://i.ibb.co/2sKXqL5/Food.png",
+        "category": "Food",
+        "title": "Better Food for Everyone",
+        "price": 19.99,
+        "card_color": "#F8714726",
+        "text_color": "#F87147",
+        "btn_color": "#F8714733"
+      },
+      {
+        "id": 12,
+        "Img": "https://i.ibb.co/jgXk4kt/Clothing.png",
+        "category": "Clothing",
+        "title": "Used Clothing Drive",
+        "price": 19.99,
+        "card_color": "#79C23F26",
+        "text_color": "#79C23F",
+        "btn_color": "#79C23F33"
+      } 
+]
