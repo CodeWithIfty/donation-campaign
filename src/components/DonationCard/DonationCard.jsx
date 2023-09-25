@@ -1,13 +1,26 @@
-const DonationCard = () => {
+const DonationCard = ({donated}) => {
+
+  const { Img, category, title, card_color, text_color, btn_color, price} = donated;
+
   return (
-    <div className="card card-side bg-[#FF444A26] shadow-xl w-1/2">
-                <figure><img src="./src/assets/Education.png" alt="Movie" className="h-full "/></figure>
-                <div className="px-6 flex items-center">
+    <div
+    style={{backgroundColor: card_color}}
+     className="card card-side  shadow-xl w-full my-5 ">
+                <figure><img src={Img} alt="Movie" className="h-full "/></figure>
+                <div className="px-6 py-4  flex items-center">
                    <div className="">
-                   <button className="p-1 mb-2 text-left bg-[#FF444A33] rounded-lg  w-24 flex justify-center text-[#FF444A] font-semibold">Education</button>
-                    <h2 className="card-title mb-2 text-xl font-bold text-gray-800 ">Good education</h2>
-                    <h2 className="card-title mb-4 text-[#FF444A] ">$290.00</h2>
-                    <button className="py-1 text-left bg-[#FF444A]  w-28 flex justify-center text-white font-semibold">View Details</button>
+                   <button
+                                       style={{backgroundColor: btn_color,
+                                        color: text_color
+                            }}
+                   className="p-1 mb-2 text-left rounded-lg  w-24 flex justify-center  font-semibold">{category}</button>
+                    <h2 className="card-title mb-2 text-xl font-bold text-gray-800 ">{title}</h2>
+                    <h2 style={{color: text_color}} className="card-title mb-4  ">${price}</h2>
+                    <button
+                    style={{backgroundColor: btn_color,
+                      color: text_color
+          }}
+                    className="py-1 text-left  w-28 flex justify-center text-white font-semibold">View Details</button>
                    </div>
                 </div>
         </div>

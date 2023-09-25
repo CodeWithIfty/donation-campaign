@@ -1,7 +1,7 @@
 
 const Banner = () => {
   return (
-    <div className="md:h-[70vh] h-[50vh]  bg-[url('./src/assets/bannerImg.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-lighten bg-white bg-opacity-90 flex justify-center items-center">
+    <div className="md:h-[70vh] h-[50vh]  bg-[url('../src/assets/bannerImg.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-lighten bg-white bg-opacity-90 flex justify-center items-center">
       <div className=" mt-28 md:mt-0">
         <h1 className="lg:text-5xl md:text-4xl font-bold text-2xl mb-12 text-center drop-shadow-2xl ease-out duration-1000 hover:scale-105 ">I Grow By Helping People In Need</h1>
         <div className=" flex items-center w-full justify-center focus:scale-105 ease-in duration-100 ">

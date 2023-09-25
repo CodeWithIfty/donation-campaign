@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div className="absolute h-32 w-full ">
+    <div className="absolute h-32 w-full">
       <div className="container p-6 mx-auto bg flex flex-col md:flex-row  justify-between items-center">
       <Link to={'/'} className="w-52 mb-3 md:mb-0">
         <img src="../src/assets/Logo.png" alt="" />
