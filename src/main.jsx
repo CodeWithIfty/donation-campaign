@@ -8,6 +8,7 @@ import './index.css'
 import Home from './components/Home/Home';
 import Root from './components/Root/Root';
 import Donation from './components/Donation/Donation';
+import DonationDetails from './components/DonationDetails/DonationDetails';
 
 
 const router = createBrowserRouter([
@@ -18,11 +19,16 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home/>,
-        loader: () => fetch('./donation.json')
+        loader: () => fetch('../donation.json')
       },
       {
         path: "/donation",
         element: <Donation/>
+      },
+      {
+        path: "/donation/:id",
+        element: <DonationDetails/>,
+        loader: () => fetch('../donation.json')
       }
     ]
   },
