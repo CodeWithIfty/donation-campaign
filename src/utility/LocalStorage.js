@@ -16,6 +16,7 @@ const getStoredDonations = () => {
         if(!isExists){
             storedDonations.push(id)
             localStorage.setItem('donated', JSON.stringify(storedDonations))
+            
         }
     }
 

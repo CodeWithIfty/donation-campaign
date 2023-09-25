@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom"
-import { saveDonation } from "../../utility/LocalStorage";
+import { getStoredDonations, saveDonation } from "../../utility/LocalStorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DonationDetails = () => {
     const donations =useLoaderData();
@@ -7,8 +9,20 @@ const DonationDetails = () => {
     const  idInt = parseInt(id);
     const donation = donations.find(donation => donation.id === idInt)
     const { Img, title, text_color,price, description} = donation;
-
+    
     const handleDonateBtn = () => {
+      
+      const storedDonations = getStoredDonations();
+      console.log(storedDonations)
+      console.log(idInt)
+      const isExists = storedDonations.includes(donation.id);
+      console.log(isExists)
+      if(!isExists){
+        toast("Successfully Donated!");
+      }
+      else{
+        toast("Oops!! You have Already Donated!");
+      }
       saveDonation(idInt)
     }
   return (
@@ -30,7 +44,9 @@ const DonationDetails = () => {
             <h1 className="text-3xl mb-3 font-bold">{title}</h1>
             <p className="text-lg text-justify">{description}</p>
         </div>
-
+        <ToastContainer
+        position="bottom-right"
+        />
     </div>
   )
 }
