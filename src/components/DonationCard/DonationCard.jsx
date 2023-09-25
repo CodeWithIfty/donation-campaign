@@ -8,7 +8,7 @@ const DonationCard = ({donated}) => {
   return (
     <div
     style={{backgroundColor: card_color}}
-     className="card card-side  shadow-xl w-full my-5 ">
+     className="card card-side  shadow-lg hover:shadow-2xl w-full my-5 hover:scale-105 ease-in-out duration-700 ">
                 <figure><img src={Img} alt="Movie" className="h-full "/></figure>
                 <div className="px-6 py-4  flex items-center">
                    <div className="">
