@@ -6,7 +6,7 @@ const Card = ({donation}) => {
 
   return (
     <Link
-    to={`/donation/${id}`}
+    to={`/donation-details/${id}`}
       className=" cursor-pointer">
             <div
             style={{backgroundColor: card_color}}

@@ -19,7 +19,7 @@ const Donation = () => {
 
   return (
     <div className="container mx-auto flex  items-center ">
-        <div className="w-full justify-center mx-5 mt-44 lg:grid  grid-rows-2 grid-flow-col	 gap-6 ">
+        <div className="w-full justify-center mx-5 mt-44  lg:grid  grid-rows-6  grid-cols-2 	 gap-6 ">
             {
               donatedCard.map( item => <DonationCard key={item.id} donated={item}/>)
             }
