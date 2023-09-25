@@ -16,7 +16,7 @@ const Donation = () => {
       const donated = donations.filter(donation => storedDonations.includes(donation.id));
       setDonatedCard(donated)
     }
-  },[])
+  },[donations])
 
   const handleShowAll = () => {
     setShowAllBtnClick(!showAllBtnClick)

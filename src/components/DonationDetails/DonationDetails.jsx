@@ -9,12 +9,11 @@ const DonationDetails = () => {
     const  idInt = parseInt(id);
     const donation = donations.find(donation => donation.id === idInt)
     const { Img, title, text_color,price, description} = donation;
+
     
     const handleDonateBtn = () => {
       
       const storedDonations = getStoredDonations();
-      console.log(storedDonations)
-      console.log(idInt)
       const isExists = storedDonations.includes(donation.id);
       console.log(isExists)
       if(!isExists){
