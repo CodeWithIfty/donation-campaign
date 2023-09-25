@@ -18,7 +18,7 @@ const DonationDetails = () => {
       const isExists = storedDonations.includes(donation.id);
       console.log(isExists)
       if(!isExists){
-        toast("Successfully Donated!");
+        toast(`Successfully Donated $${price}`);
       }
       else{
         toast("Oops!! You have Already Donated!");

@@ -30,13 +30,15 @@ const Donation = () => {
 
   return (
     <div className="container mx-auto flex flex-col items-center ">
-        <div className="w-full justify-center mx-5 mt-44  lg:grid  grid-cols-2 	 gap-6 ">
+        <div className="w-full justify-center mx-5 mt-44  lg:grid  grid-cols-2 	 gap-6 p-3 ">
             {
               donatedCard.slice(0, donatedCardLength).map( item => <DonationCard key={item.id} donated={item}/>)
             }
         </div>
-        <div className=" pb-10 pt-5">
-          <button onClick={handleShowAll} className="btn btn-success text-white  font-bold drop-shadow-xl hover:scale-105 ease-in-out duration-200">{ !showAllBtnClick ? 'See All' : 'See Less'}</button>
+        <div className=" pb-10 ">
+          <button onClick={handleShowAll} className={` ${
+    donatedCard.length > 4 && !showAllBtnClick  ? 'block' : 'hidden'
+  } btn btn-success text-white  font-bold drop-shadow-xl hover:scale-105 ease-in-out duration-200`}>Show All</button>
         </div>
     </div>
   )
