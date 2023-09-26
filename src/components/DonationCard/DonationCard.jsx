@@ -9,7 +9,7 @@ const DonationCard = ({donated}) => {
     <div
     style={{backgroundColor: card_color}}
      className="card card-side  shadow-lg hover:shadow-2xl w-full my-5 hover:scale-105 ease-in-out duration-700 ">
-                <figure><img src={Img} alt="Movie" className="h-full "/></figure>
+                <figure className='w-32 lg:w-56  overflow-hidden'><img src={Img} alt="Movie" className="h-full lg:w-56 w-32"/></figure>
                 <div className="px-6 py-4  flex items-center">
                    <div className="">
                    <button

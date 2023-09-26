@@ -12,6 +12,12 @@ const Banner = ({ onCategoryChange }) => {
     onCategoryChange(categoryInput);
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="md:h-[70vh] h-[50vh] bg-[url('../src/assets/bannerImg.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-lighten bg-white bg-opacity-90 flex justify-center items-center">
       <div className="mt-28 md:mt-0">
@@ -23,6 +29,7 @@ const Banner = ({ onCategoryChange }) => {
             placeholder="Search here...."
             value={categoryInput}
             onChange={handleInputChange}
+            onKeyPress={handleKeyPress}
           />
           <button
             className="bg-[#FF444A] py-3 rounded-e-lg px-6 font-bold ease-out duration-100 hover:scale-105 text-white shadow-md border-2 border-[#FF444A]"
